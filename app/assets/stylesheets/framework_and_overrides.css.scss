@@ -1,14 +1,18 @@
 // import the CSS framework
 @import "bootstrap";
 
+body {
+  padding-top: 51px;  
+}
+
 // make all images responsive by default
 img {
   @extend .img-responsive;
   margin: 0 auto;
   }
-// override for the 'Home' navigation link
+
 .navbar-brand {
-  font-size: inherit;
+  font-size: 20px;
   }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
@@ -35,9 +39,7 @@ img {
 main {
   @extend .container;
   background-color: #eee;
-  padding-bottom: 80px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
   }
 section {
   @extend .row;
@@ -83,7 +85,7 @@ section {
 #sidebar {
   height: 100%;
   padding-right: 0;
-  padding-top: 20px;
+	padding-left: 0;
 }
 #sidebar .nav {
   width: 95%;
