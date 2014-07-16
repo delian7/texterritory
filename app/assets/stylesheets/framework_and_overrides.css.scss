@@ -101,7 +101,9 @@ section {
     position: relative;
     -webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
+		-o-transition: all 0.25s ease-out;
+		left:0px;
+
   }
   .row-offcanvas-right
   .sidebar-offcanvas {
