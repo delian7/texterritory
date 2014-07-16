@@ -16,11 +16,9 @@
 //= require bootstrap
 //= require_tree .
 
-var collapse = function() {
+// Collapsable Sidebar
+$(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
     $('.row-offcanvas').toggleClass('active');
   });
-};
-
-$(document).ready(collapse);
-$(document).on('page:load', collapse);
+});
