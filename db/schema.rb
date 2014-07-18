@@ -17,11 +17,14 @@ ActiveRecord::Schema.define(version: 20140717203922) do
   enable_extension "plpgsql"
 
   create_table "questions", force: true do |t|
+    t.string   "prompt"
+    t.integer  "q_type",     default: 0, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "responses", force: true do |t|
+    t.string   "input"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
