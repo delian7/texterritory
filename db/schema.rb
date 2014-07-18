@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20140718043253) do
   end
 
   create_table "responses", force: true do |t|
+    t.integer  "question_id"
     t.string   "input"
     t.datetime "created_at"
     t.datetime "updated_at"
