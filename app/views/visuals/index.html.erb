@@ -1,6 +1,6 @@
 <div class="row text-center">
 
-	<% @questions.each do |question| %>
+	<% @questions.pluck(:prompt).each do |question| %>
 	
 		<h4><%= question %></h4>
 		
