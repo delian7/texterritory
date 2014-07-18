@@ -1,6 +1,7 @@
 class VisualsController < ApplicationController
   def index
-    @questions = Question.find(1).prompt
+    # @question = Question.where(current: true)
+    @questions = Question.where(current: true).pluck(:prompt)
   end
   
   

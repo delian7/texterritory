@@ -3,6 +3,7 @@ class CreateQuestions < ActiveRecord::Migration
     create_table :questions do |t|
 
       t.string :prompt
+      t.boolean :current
       t.integer :q_type, default: 0, null: false
       t.timestamps
     end

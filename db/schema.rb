@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20140717203922) do
 
   create_table "questions", force: true do |t|
     t.string   "prompt"
+    t.boolean  "current"
     t.integer  "q_type",     default: 0, null: false
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,19 +1,17 @@
 <div class="row text-center">
-	<h3>Please choose</h3>
-	<!-- Questions -->
-	<h4>
-		<%= @questions %>
-	</h4>
-</div>
 
-<!-- Answers -->
-<div class="row">
-  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+	<% @questions.each do |question| %>
+	
+		<h4><%= question %></h4>
+		
+		<div class="btn-group" style="padding:1em">
+		  <div class="btn btn-default col-xs-6 col-sm-3">Something Red</div>
+		  <div class="btn btn-default col-xs-6 col-sm-3">A Hat</div>
+		  <div class="btn btn-default col-xs-6 col-sm-3">Red Dress</div>
+		  <div class="btn btn-default col-xs-6 col-sm-3">Blue Dress</div>
+		</div><br />
+		<div class="btn btn-default text-center">Submit</div>
+		<br />
+	<%end%>
 
-  <!-- Add the extra clearfix for only the required viewport -->
-  <div class="clearfix visible-xs-block"></div>
-
-  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
 </div>
