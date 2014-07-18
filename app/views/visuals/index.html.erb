@@ -1,2 +1,13 @@
-<h1>Visuals#index</h1>
-<p>Find me in app/views/visuals/index.html.erb</p>
+<div class="row text-center">
+
+	<% @questions.each do |question| %>
+	
+		<h4><%= question.text %></h4>
+		<div class="btn-group"> 
+			<% question.answer_choices.each do |choice| %>
+				<div class="btn btn-default col-xs-6 col-sm-3"><%= choice.text%></div>
+			<% end %>
+		</div>
+	<%end%>
+
+</div>
