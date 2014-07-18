@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'modules/index'
 
   root to: 'visitors#index'
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "registrations" }
   resources :users
   
   match ':controller(/:action(/:id))', :via => :get
