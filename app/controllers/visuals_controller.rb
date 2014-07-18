@@ -4,5 +4,8 @@ class VisualsController < ApplicationController
     @questions = Question.where(current: true)
   end
   
+  def answer
+    
+  end
   
 end

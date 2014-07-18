@@ -9,4 +9,5 @@ class Question < ActiveRecord::Base
   
   has_many :responses
   has_many :visuals
+  has_many :answer_choices
 end

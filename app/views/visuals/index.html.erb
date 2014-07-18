@@ -1,17 +1,25 @@
 <div class="row text-center">
 
-	<% @questions.pluck(:prompt).each do |question| %>
+	<% @questions.each do |question| %>
 	
-		<h4><%= question %></h4>
-		
-		<div class="btn-group" style="padding:1em">
+		<h4><%= question.text %></h4>
+		<div class="btn-group"> 
+			<% question.answer_choices.each do |choice| %>
+				<div class="btn btn-default col-xs-6 col-sm-3"><%= choice.text%></div>
+			<% end %>
+		</div>
+	<%end%>
+
+</div>
+
+
+
+
+		<!-- <div class="btn-group" style="padding:1em">
 		  <div class="btn btn-default col-xs-6 col-sm-3">Something Red</div>
 		  <div class="btn btn-default col-xs-6 col-sm-3">A Hat</div>
 		  <div class="btn btn-default col-xs-6 col-sm-3">Red Dress</div>
 		  <div class="btn btn-default col-xs-6 col-sm-3">Blue Dress</div>
 		</div><br />
 		<div class="btn btn-default text-center">Submit</div>
-		<br />
-	<%end%>
-
-</div>
+		<br /> -->
