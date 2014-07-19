@@ -1,0 +1,53 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="825" measuredH="597" mockupW="282" mockupH="573">
+  <controls>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::iPhone" x="543" y="24" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>allWhite</bgPattern>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Component" x="570" y="124" w="228" h="389" measuredW="228" measuredH="389" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/iPhone%205%20Layout.bmml#iPhone%205%20Template%201</src>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Icon" x="579" y="184" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>menu%26bm%3Bmenu.bmml%26bm%3Bmenu.bmml%26bm%3Bmenu.bmml</href>
+        <icon>HLinesIcon%7Csmall</icon>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2236%2C160%2C60%2C184%22%20href%3D%22menu.bmml%22%20alt%3D%22menu%22%20id%3D%2233%22/%3E</map>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::ButtonBar" x="574" y="326" w="218" h="27" measuredW="157" measuredH="25" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>pictures%26bm%3Bpictures.bmml%26bm%3Bpictures.bmml%26bm%3Bpictures.bmml%2Ctext%26bm%3Btext.bmml%26bm%3Btext.bmml%26bm%3Btext.bmml%2Cmusic%26bm%3Bmusic.bmml%26bm%3Bmusic.bmml%26bm%3Bmusic.bmml</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C302%2C119%2C329%22%20href%3D%22pictures.bmml%22%20alt%3D%22pictures%22%20id%3D%2234%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22119%2C302%2C177%2C329%22%20href%3D%22text.bmml%22%20alt%3D%22text%22%20id%3D%2234%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22177%2C302%2C247%2C329%22%20href%3D%22music.bmml%22%20alt%3D%22music%22%20id%3D%2234%22/%3E</map>
+        <markup>true</markup>
+        <selectedIndex>1</selectedIndex>
+        <size>11</size>
+        <text>Pictures%2C%20Text%2C%20Music</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Button" x="659" y="289" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>text2%26bm%3Btext2.bmml%26bm%3Btext2.bmml%26bm%3Btext2.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22116%2C265%2C166%2C292%22%20href%3D%22text2.bmml%22%20alt%3D%22text2%22%20id%3D%2235%22/%3E</map>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Tree" x="573" y="215" w="218" h="44" measuredW="300" measuredH="225" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <selectedIndex>-1</selectedIndex>
+        <size>18</size>
+        <text>How%20is%20Grace%20Feeling%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::iPhoneKeyboard" x="570" y="353" w="-1" h="-1" measuredW="226" measuredH="160" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::TextInput" x="603" y="248" w="162" h="-1" measuredW="79" measuredH="26" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

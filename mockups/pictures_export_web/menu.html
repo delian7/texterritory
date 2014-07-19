@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Napkee export</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/colorpicker.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="css/jquery.orgchart.css">
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	
+	
+	<style type="text/css">
+	#napkeeCanvas {
+		position:absolute;
+		left:0px;
+		top:0px;
+	}
+	.napkeeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	.napkeeRelativeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	
+	
+#nap7{
+	left:527px;
+	top:11px;
+	width:282px;
+	height:573px;
+	z-index:0;
+}
+	
+#nap21{
+	left:559px;
+	top:165px;
+	z-index:2;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+	
+#nap23{
+	left:99px;
+	top:15px;
+	width:96px;
+	height:21px;
+	z-index:3;
+	font-size: 18px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:center;
+	color:#000000;
+}
+	
+#nap25{
+	left:99px;
+	top:158px;
+	z-index:4;
+}
+
+#nap25.napkee {
+	width:99px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap26{
+	left:99px;
+	top:111px;
+	z-index:5;
+}
+
+#nap26.napkee {
+	width:99px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap27{
+	left:99px;
+	top:210px;
+	z-index:6;
+}
+
+#nap27.napkee {
+	width:99px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap28{
+	left:841px;
+	top:216px;
+	width:180px;
+	height:257px;
+	z-index:7;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	color:#000000;
+}
+	
+#nap29{
+	left:112px;
+	top:36px;
+	width:70px;
+	height:15px;
+	z-index:8;
+	font-size: 12px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:center;
+	color:#000000;
+}
+	
+#nap30{
+	left:7px;
+	top:148px;
+	width:61px;
+	height:47px;
+	z-index:9;
+}
+#nap30 i{
+	font-size:47px;
+}
+#nap30 img{
+	width:32px;
+	height:32px;
+	border:0px solid;
+}
+#nap30 td{
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	border:0;
+	text-align:center;
+}
+	
+#nap31{
+	left:388px;
+	top:293px;
+	width:124px;
+	height:87px;
+	z-index:10;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	color:#000000;
+}
+	
+#nap32{
+	left:45px;
+	top:138px;
+	width:16px;
+	height:16px;
+	font-size:16px;
+	z-index:11;
+	border:0px solid;
+}
+	
+	</style>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/jquery.migration.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.swfobject.1-0.5.min.js"></script>
+    <script src="js/swfobject.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/bootstrap-colorpicker.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/jquery.orgchart.min.js"></script>
+    <script src="js/jquery.treeview.min.js"></script>
+    <script src="js/jquery.tagcloud.min.js"></script>
+	
+  </head>
+  <body>
+  
+	
+
+
+	
+<div id="nap7" class="napkeeComponent napkeeUnsupported">Sorry, this components is not supported (yet!)</div>
+	
+<div id="nap21" class="napkeeComponent napkeeTabbar tabbable tabs-left">
+	<ul class="nav nav-tabs">
+				<li><a id="nap21i0" href="#nap21-0" data-toggle="tab">Home</a></li>
+				<li><a id="nap21i1" href="#nap21-1" data-toggle="tab">Login</a></li>
+				<li class="active"><a id="nap21i2" href="#nap21-2" data-toggle="tab">Applications</a></li>
+				<li><a id="nap21i3" href="#nap21-3" data-toggle="tab">About</a></li>
+	</ul>
+	<div class="tab-content">
+				<div id="nap21-0" class="tab-pane"></div>
+				<div id="nap21-1" class="tab-pane"></div>
+				<div id="nap21-2" class="tab-pane active">
+<span id="nap23" class="napkeeRelativeComponent napkeeTitle">Texterritory</span>
+	
+<button id="nap25" type="button" class="napkeeRelativeComponent napkeeButton btn">Pictures</button>
+	
+<button id="nap26" type="button" disabled="disabled" class="napkeeRelativeComponent napkeeButton btn">Music</button>
+	
+<button id="nap27" type="button" disabled="disabled" class="napkeeRelativeComponent napkeeButton btn">Text</button>
+	
+<span id="nap29" class="napkeeRelativeComponent napkeeSubTitle">18:00 &ndash; 19:00</span>
+	
+<table id="nap30" class="napkeeRelativeComponent napkeeIconLabel">
+	<tr>
+		<td>
+			&nbsp;
+		</td>
+		<td align="center">
+			<img id="nap30-i" src="icons/napkee/EmailIcon.png" class="napkeeComponent napkeeIcon" />
+		</td>
+		<td>
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td>
+			&nbsp;
+		</td>
+		<td valign="middle" align="center">
+			Messages
+		</td>
+		<td>
+			&nbsp;
+		</td>
+	</tr>
+</table>
+	
+	<img id="nap32" src="icons/napkee/Number3Icon.png" class="napkeeRelativeComponent napkeeIcon rotate360" />
+	</div>
+				<div id="nap21-3" class="tab-pane"></div>
+	</div>
+</div>
+
+	
+<table id="nap28" class="napkeeComponent napkeeVCurly">
+	<tr>
+		<td class="napkeeVCurlyVisible"><img src="images/vcurlyright.png" width="24" style="height:257px" /></td>
+		<td class="napkeeVCurlyText">These will be buttons to the various interfaces of the application.<br/><br/>These options will become in&ndash;focus (and not disabled) when there are things that the audience can do.<br/></td>
+		<td class="napkeeVCurlyInvisible">&nbsp;</td>
+	</tr>
+</table>
+	
+<table id="nap31" class="napkeeComponent napkeeVCurly">
+	<tr>
+		<td class="napkeeVCurlyInvisible">&nbsp;</td>
+		<td class="napkeeVCurlyText">This will display only if there are message alerts.<br/></td>
+		<td class="napkeeVCurlyVisible"><img src="images/vcurlyleft.png" width="24" style="height:87px" /></td>
+	</tr>
+</table>
+	
+	
+    <script type="text/javascript" charset="utf-8">
+	    function showMockup(url,params){
+			var finalUrl = url + "?";
+			if (params!=null){
+				jQuery.each(params, function(par, field){
+					finalUrl += par + "=" + $("#"+field).val() + "&";
+				});
+			}
+			location.href = finalUrl;
+		}
+		$(document).ready(function(){
+			$(".accordion").each(function(){
+				var _acc = $(this);
+				_acc.find(".accordion-inner").height(_acc.height() - (_acc.find(".accordion-inner").length * 36));
+			});
+			$(document).on("click", function(e){
+				$("[data-date]").datepicker('show');
+			});
+		
+			
+	
+	
+$("#nap21").click(function(event){
+});
+
+$("#nap21i0").click(function(event){
+	showMockup('home.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap21i1").click(function(event){
+	showMockup('login.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap21i2").click(function(event){
+});
+
+$("#nap21i3").click(function(event){
+	showMockup('about.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+	
+$("#nap23").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap25").click(function(event){
+	showMockup('pictures.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap26").click(function(event){
+	showMockup('music.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap27").click(function(event){
+	showMockup('text.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap28").click(function(event){
+});
+	
+$("#nap29").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap30").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap31").click(function(event){
+});
+	
+$("#nap32").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+		});
+	</script>
+  </body>
+</html>

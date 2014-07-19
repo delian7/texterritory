@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Napkee export</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/colorpicker.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="css/jquery.orgchart.css">
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	
+	
+	<style type="text/css">
+	#napkeeCanvas {
+		position:absolute;
+		left:0px;
+		top:0px;
+	}
+	.napkeeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	.napkeeRelativeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	
+	
+#nap0{
+	left:527px;
+	top:11px;
+	width:282px;
+	height:573px;
+	z-index:0;
+}
+	
+#nap2{
+	left:563px;
+	top:171px;
+	width:24px;
+	height:24px;
+	font-size:24px;
+	z-index:2;
+	border:0px solid;
+}
+	
+#nap3{
+	left:575px;
+	top:210px;
+	width:186px;
+	height:21px;
+	z-index:3;
+	font-size: 18px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:center;
+	color:#000000;
+}
+	
+#nap4{
+	left:558px;
+	top:464px;
+	width:218px;
+	height:27px;
+	z-index:4;
+	font-size: 11px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+#nap4 li {
+	width:46px;
+	height:27px;
+	line-height:27px;
+}
+#nap4 li a{
+	text-decoration:none;
+}
+	
+#nap5{
+	left:575px;
+	top:260px;
+	height:195px;
+	width:190px;
+	z-index:5;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap6{
+	left:636px;
+	top:372px;
+	z-index:6;
+}
+
+#nap6.napkee {
+	width:64px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+	</style>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/jquery.migration.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.swfobject.1-0.5.min.js"></script>
+    <script src="js/swfobject.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/bootstrap-colorpicker.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/jquery.orgchart.min.js"></script>
+    <script src="js/jquery.treeview.min.js"></script>
+    <script src="js/jquery.tagcloud.min.js"></script>
+	
+  </head>
+  <body>
+  
+	
+
+
+	
+<div id="nap0" class="napkeeComponent napkeeUnsupported">Sorry, this components is not supported (yet!)</div>
+	
+	<img id="nap2" src="icons/napkee/HLinesIcon.png" class="napkeeComponent napkeeIcon rotate360" />
+	
+<span id="nap3" class="napkeeComponent napkeeTitle">Please Choose:</span>
+	
+<div id="nap4" class="btn-group napkeeComponent napkeeButtonbar">
+<a class="btn" href="#" id="nap4i0">Pictures</a><a class="btn active" href="#" id="nap4i1">Text</a><a class="btn" href="#" id="nap4i2">Music</a>
+</div>
+	
+<div id="nap5" class="napkeeComponent napkeeTree">
+	<ul id="nap5browser" class="filetree treeview-famfamfam">
+		<li id="nap5i0"><span class="hand file"><b>What Should Grace Wear?</b></span></li><li id="nap5i1"><span class="hand file">Earings</span></li><li id="nap5i2"><span class="hand file">Summer Shoes</span></li><li id="nap5i3"><span class="hand file">Hat</span></li>
+	</ul>
+</div>
+	
+<button id="nap6" type="button" class="napkeeComponent napkeeButton btn">Submit</button>
+	
+	
+    <script type="text/javascript" charset="utf-8">
+	    function showMockup(url,params){
+			var finalUrl = url + "?";
+			if (params!=null){
+				jQuery.each(params, function(par, field){
+					finalUrl += par + "=" + $("#"+field).val() + "&";
+				});
+			}
+			location.href = finalUrl;
+		}
+		$(document).ready(function(){
+			$(".accordion").each(function(){
+				var _acc = $(this);
+				_acc.find(".accordion-inner").height(_acc.height() - (_acc.find(".accordion-inner").length * 36));
+			});
+			$(document).on("click", function(e){
+				$("[data-date]").datepicker('show');
+			});
+		
+			
+	
+$("#nap2").click(function(event){
+	showMockup('menu.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap3").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+
+$("#nap4").click(function(event){
+});
+
+$("#nap4i0").click(function(event){
+	showMockup('pictures.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap4i1").click(function(event){
+	showMockup('text.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap4i2").click(function(event){
+	showMockup('music.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+	
+$('#nap5browser').treeview();
+
+$("#nap5").click(function(event){
+});
+
+	
+$("#nap6").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+		});
+	</script>
+  </body>
+</html>
