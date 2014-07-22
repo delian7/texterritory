@@ -1,2 +1,16 @@
-<h1>Questions#new</h1>
-<p>Find me in app/views/questions/new.html.erb</p>
+<%= link_to("<< Back to List", {:action => 'index'}) %>
+
+<div class="question new">
+	<h2>Create Question</h2>
+
+	<%= form_for(:question, :url => {:action => 'create'}) do |f| %>
+		
+		<%= render(:partial => 'form', :locals => {:f => f}) %>
+
+		<div class"btn btn-default">
+			<%= submit_tag("Create Question") %>
+		</div>
+
+	<% end %>
+
+</div>
