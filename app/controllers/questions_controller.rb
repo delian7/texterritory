@@ -38,6 +38,13 @@ class QuestionsController < ApplicationController
   end
 
   def delete
+    @question = Question.find(params[:id])
+  end
+  
+  def destroy
+    @question = Question.find(params[:id])
+    @question.destroy
+    redirect_to(:action => 'index')
   end
   
   private 

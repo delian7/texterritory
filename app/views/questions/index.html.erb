@@ -18,7 +18,7 @@
       <td>
         <%= link_to("Show", {:action => 'show', :id => question.id})%>
         <%= link_to("Edit", {:action => 'edit', :id => question.id})%>
-        <%= link_to("Delete", '#')%>
+        <%= link_to("Delete", {:action => 'delete', :id => question.id})%>
       </td>
     </tr>
     <% end %>
