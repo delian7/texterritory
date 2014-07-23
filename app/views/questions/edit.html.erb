@@ -1,2 +1,16 @@
-<h1>Questions#edit</h1>
-<p>Find me in app/views/questions/edit.html.erb</p>
+<%= link_to("<< Back to List", {:action => 'index'}) %>
+
+<div class="question edit">
+	<h2>Update Question</h2>
+
+	<%= form_for(:question, :url => {:action => 'update', :id => @question.id}) do |f| %>
+		
+		<%= render(:partial => 'form', :locals => {:f => f}) %>
+
+		<div class"btn btn-default">
+			<%= submit_tag("Revise Question") %>
+		</div>
+
+	<% end %>
+
+</div>

@@ -17,7 +17,7 @@
       <td><%= question.current ? 'Yes' : 'No' %></td>
       <td>
         <%= link_to("Show", {:action => 'show', :id => question.id})%>
-        <%= link_to("Edit", '#')%>
+        <%= link_to("Edit", {:action => 'edit', :id => question.id})%>
         <%= link_to("Delete", '#')%>
       </td>
     </tr>
