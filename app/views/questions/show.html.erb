@@ -1,0 +1,17 @@
+<%= link_to("<< Back to List", {:action => 'index'}) %>
+
+<div>
+  <h2>Show Question</h2>
+
+  <table summary="Question detail view">
+    <tr>
+      <th>Question Text: &emsp;</th>
+      <td><%= @question.text %></td>
+    </tr>
+    <tr>
+      <th>Dipslayed? &emsp;</th>
+      <td><%= @question.current ? 'yes' : 'no' %></td>
+    </tr>
+  </table>
+
+</div>

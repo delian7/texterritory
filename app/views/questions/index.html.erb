@@ -1,0 +1,26 @@
+<div class="Questions index">
+  <h2>List of Questions</h2>
+
+  <%= link_to("Add New Question", {:action => 'new'}, :class => 'action new') %>
+
+  <table class="listing" summary="Question list">
+    <tr>
+      <th>&emsp;&emsp;&emsp;</th>
+      <th>Text</th>
+      <th>Current &emsp;&emsp;&emsp;</th>
+      <th>Actions</th>
+    </tr>
+    <% @questions.each do |question| %>
+    <tr>
+      <td><%= question.id %></td>
+      <td><%= question.text %>&emsp;&emsp;&emsp;</td>
+      <td><%= question.current ? 'Yes' : 'No' %></td>
+      <td>
+        <%= link_to("Show", {:action => 'show', :id => question.id})%>
+        <%= link_to("Edit", {:action => 'edit', :id => question.id})%>
+        <%= link_to("Delete", {:action => 'delete', :id => question.id})%>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>

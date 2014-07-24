@@ -1,0 +1,16 @@
+<%= link_to("<< Back to List", {:action => 'index'}) %>
+
+<div class="question delete">
+	<h2>Delete Question</h2>
+
+	<%= form_for(:question, :url => {:action => 'destroy', :id => @question.id}) do |f| %>
+		
+		<p>Are you sure you want to delete question "<%= @question.text %>"?</p>
+
+		<div class"btn btn-default">
+			<%= submit_tag("Delete Question") %>
+		</div>
+
+	<% end %>
+
+</div>
