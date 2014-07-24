@@ -1,2 +1,14 @@
-<h1>Responses#index</h1>
-<p>Find me in app/views/responses/index.html.erb</p>
+<div class="Response index">
+  <h2>List of Responses</h2>
+
+  <%= link_to("Add New Response", {:action => 'new'}, :class => 'action new') %>
+	<hr />
+  <% @responses.each do |response| %>
+    <b>Response ID: </b><%= response.id %><br />
+		<b>Response: </b><%= response.input %><br />
+		<b>Question ID: </b><%= response.question_id %><br />
+		
+		<br />
+	<%end%>
+	
+	<%= current_user.name %>

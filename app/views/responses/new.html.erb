@@ -1,2 +1,19 @@
-<h1>Responses#new</h1>
-<p>Find me in app/views/responses/new.html.erb</p>
+<%= link_to("<< Back to List", {:action => 'index'}) %>
+
+<div class="responses new">
+	<h2>Create Response</h2>
+
+	<%= form_for(:response, :url => {:action => 'create'}) do |f| %>
+		
+		Response: <%= f.text_field(:input) %><br />
+		Question ID: <%= f.text_field(:question_id) %>
+
+		<hr />
+
+		<div class"btn btn-default">
+			<%= submit_tag("Create Question") %>
+		</div>
+
+	<% end %>
+
+</div>
