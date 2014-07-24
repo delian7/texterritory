@@ -15,6 +15,7 @@ class ResponsesController < ApplicationController
     @response = Response.new(response_params)
     
     if @response.save
+      @response.update_attributes(:user_id => current_user.id)
       redirect_to(:action => 'index')
     else
       render('new')
@@ -22,9 +23,27 @@ class ResponsesController < ApplicationController
   end
 
   def edit
+    @response = Response.find(params[:id])
+  end
+  
+  def update
+    @response = Response.find(params[:id])
+    
+    if @response.update_attributes(question_params)
+      redirect_to(:action => 'show', :id => @response.id)
+    else
+      render('edit')
+    end
   end
 
   def delete
+    @response = Response.find(params[:id])
+  end
+  
+  def destroy
+    @response = Response.find(params[:id])
+    @response.destroy
+    redirect_to(:action => 'index')
   end
   
   private 
