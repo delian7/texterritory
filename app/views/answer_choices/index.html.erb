@@ -1,17 +1,16 @@
-<div class="Response index">
-  <h2>List of Responses</h2>
+<div class="Answer_choice index">
+  <h2>List of Answer Choices</h2>
 
   <%= link_to("Add New Response", {:action => 'new'}) %>
 	<hr />
-  <% @responses.each do |response| %>
+  <% @answer_choices.each do |choice| %>
 
-    <b>Response ID: </b><%= response.id %><br />
-		<b>Response: </b><%= response.input %><br />
-		<b>Question ID: </b><%= response.question_id %><br />
-		<b>User ID: </b><%= response.user_id %><br /> 
-		<%= link_to("Show", {:action => 'show', :id => response.id}) %> |
-		<%= link_to("Edit", {:action => 'edit', :id => response.id}) %> |
-		<%= link_to("Delete", {:action => 'delete', :id => response.id}) %><br />
+    <b>Choice ID: </b><%= choice.id %><br />
+		<b>Text: </b><%= choice.text %><br />
+		<b>Question ID: </b><%= choice.question_id %><br />
+		<%= link_to("Show", {:action => 'show', :id => choice.id}) %> |
+		<%= link_to("Edit", {:action => 'edit', :id => choice.id}) %> |
+		<%= link_to("Delete", {:action => 'delete', :id => choice.id}) %><br />
 				
 		<br />
 	<%end%>
