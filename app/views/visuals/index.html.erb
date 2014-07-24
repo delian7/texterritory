@@ -1,13 +1,17 @@
 <div class="row text-center">
-
-	<% @questions.each do |question| %>
+	<%= form_for(:response, :url => {:controller => 'responses', :action => 'create'}) do |f| %>
+		<% @questions.each do |question| %>
+		
+			<h4><%= question.text %></h4>
+		
+			<div class="btn-group"> 
+				<% question.answer_choices.each do |choice| %>
+						<%= f.hidden_field :input, :value => choice.text %>
+						<%= f.hidden_field :question_id, :value => question.id %>
+						<%= f.submit :class => 'btn btn-default col-xs-6 col-sm-3', :type => :image, :src => "/assets/inbox.png" %>
+				<% end %>
+			</div>
 	
-		<h4><%= question.text %></h4>
-		<div class="btn-group"> 
-			<% question.answer_choices.each do |choice| %>
-				<div class="btn btn-default col-xs-6 col-sm-3"><%= choice.text%></div>
-			<% end %>
-		</div>
-	<%end%>
-
+		<%end%>
+	<% end %>
 </div>

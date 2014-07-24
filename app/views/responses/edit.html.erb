@@ -1,0 +1,16 @@
+<%= link_to("<< Back to List", {:action => 'index'}) %>
+
+<div class="response edit">
+	<h2>Update Response</h2>
+
+	<%= form_for(:response, :url => {:action => 'update', :id => @response.id}) do |f| %>
+		
+		<%= render(:partial => 'form', :locals => {:f => f}) %>
+
+		<div class"btn btn-default">
+			<%= submit_tag("Revise Response") %>
+		</div>
+
+	<% end %>
+
+</div>
