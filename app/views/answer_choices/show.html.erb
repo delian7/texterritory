@@ -1,0 +1,17 @@
+<%= link_to("<< Back to List", {:action => 'index'}) %>
+
+<div>
+  <h2>Show Answer Choices</h2>
+
+  <table summary="choice detail view">
+    <tr>
+      <th>Text: &emsp;</th>
+      <td><%= @answer_choice.text %></td>
+    </tr>
+    <tr>
+      <th>Question ID: &emsp;</th>
+      <td><%= @answer_choice.question_id%></td>
+    </tr>
+  </table>
+
+</div>
