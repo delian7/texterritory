@@ -8,6 +8,7 @@
     <b>Choice ID: </b><%= choice.id %><br />
 		<b>Text: </b><%= choice.text %><br />
 		<b>Question ID: </b><%= choice.question_id %><br />
+		<b>Image URL: </b><%= choice.image_url %><br />
 		<%= link_to("Show", {:action => 'show', :id => choice.id}) %> |
 		<%= link_to("Edit", {:action => 'edit', :id => choice.id}) %> |
 		<%= link_to("Delete", {:action => 'destroy', :id => choice.id}) %><br />
