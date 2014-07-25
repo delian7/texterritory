@@ -1,16 +1,7 @@
 Rails.application.routes.draw do
-  get 'responses/index'
-
-  get 'responses/show'
-
-  get 'responses/new'
-
-  get 'responses/edit'
-
-  get 'responses/delete'
-
   get 'visuals/index'
   get 'modules/index'
+  get 'textuals/index'
 
   root to: 'visitors#index'
   devise_for :users, :controllers => { :registrations => "registrations" }
