@@ -10,7 +10,7 @@
 		<b>Question ID: </b><%= choice.question_id %><br />
 		<%= link_to("Show", {:action => 'show', :id => choice.id}) %> |
 		<%= link_to("Edit", {:action => 'edit', :id => choice.id}) %> |
-		<%= link_to("Delete", {:action => 'delete', :id => choice.id}) %><br />
+		<%= link_to("Delete", {:action => 'destroy', :id => choice.id}) %><br />
 				
 		<br />
 	<%end%>

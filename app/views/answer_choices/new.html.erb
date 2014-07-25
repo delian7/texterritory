@@ -1,14 +1,14 @@
 <%= link_to("<< Back to List", {:action => 'index'}) %>
 
-<div class="responses new">
-	<h2>Create Response</h2>
+<div class="choice new">
+	<h2>Create Answer Choice</h2>
 
-	<%= form_for(:response, :url => {:action => 'create'}) do |f| %>
+	<%= form_for(:answer_choice, :url => {:action => 'create'}) do |f| %>
 		
 		<%= render(:partial => 'form', :locals => {:f => f}) %>
 
 		<div class"btn btn-default">
-			<%= submit_tag("Create Question") %>
+			<%= submit_tag("Create Choice") %>
 		</div>
 
 	<% end %>

@@ -1,16 +1,16 @@
 <%= link_to("<< Back to List", {:action => 'index'}) %>
 
 <div>
-  <h2>Show Responses</h2>
+  <h2>Show Answer Choices</h2>
 
-  <table summary="response detail view">
+  <table summary="choice detail view">
     <tr>
-      <th>Response Text: &emsp;</th>
-      <td><%= @response.input %></td>
+      <th>Text: &emsp;</th>
+      <td><%= @answer_choice.text %></td>
     </tr>
     <tr>
-      <th>User ID: &emsp;</th>
-      <td><%= @response.user_id%></td>
+      <th>Question ID: &emsp;</th>
+      <td><%= @answer_choice.question_id%></td>
     </tr>
   </table>
 

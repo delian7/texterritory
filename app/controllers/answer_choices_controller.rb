@@ -9,7 +9,7 @@ class AnswerChoicesController < ApplicationController
   end
 
   def new
-    @answer_choice = AnswerChoice.new(:current => true)
+    @answer_choice = AnswerChoice.new
   end
 
   def create
