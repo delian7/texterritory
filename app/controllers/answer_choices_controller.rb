@@ -49,6 +49,6 @@ class AnswerChoicesController < ApplicationController
   private 
 
   def answer_choice_params
-    params.require(:answer_choice).permit(:text, :question_id)
+    params.require(:answer_choice).permit(:text, :question_id, :image)
   end 
 end
