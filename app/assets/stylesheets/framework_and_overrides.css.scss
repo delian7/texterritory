@@ -121,6 +121,7 @@ section {
   .row-offcanvas-left.active {
     left: 41.6%;
   }
+
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
@@ -136,6 +137,11 @@ section {
     border-top: 1px solid #484848;
     border-bottom: 1px solid #2E2E2E;
   }
+	
+	#sidebar .nav>h5 {
+		color:white;
+		
+	}
   #sidebar .nav>li:first-child {
     border-top:0;
   }
