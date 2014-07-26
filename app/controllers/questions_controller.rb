@@ -49,7 +49,7 @@ class QuestionsController < ApplicationController
   private 
   
   def question_params
-    params.require(:question).permit(:text, :current)
+    params.require(:question).permit(:text, :current, :q_type)
   end 
 end
 

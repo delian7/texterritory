@@ -1,5 +1,5 @@
 class Question < ActiveRecord::Base
-  enum q_type: [ :visual, :textual ]
+  enum q_type: { textual: 0, visual: 1 }
   after_initialize :set_default, :if => :new_record?
   
   def set_default
@@ -8,6 +8,5 @@ class Question < ActiveRecord::Base
   end 
   
   has_many :responses
-  has_many :visuals
   has_many :answer_choices
 end

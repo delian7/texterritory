@@ -1,10 +1,9 @@
-<table summary="Question form fields">
-	<tr>
-		<th>Text</th>
-		<td><%= f.text_field(:text) %></td>
-	</tr>
-	<tr>
-		<th>Should it be visible?</th>
-		<td><%= f.check_box :current%></td>
-	</tr>
-</table>
+<%= f.label 'Question Text' %>
+<%= f.text_field(:text) %><br/>
+<%= f.label 'Should it be visible?' %>
+<%= f.check_box :current%><br />
+
+<%= f.radio_button :q_type, 'visual' %> 
+<%= label :q_type, 'Picture' %>
+<%= f.radio_button :q_type, 'textual'%> 
+<%= label :q_type, 'Text' %>
