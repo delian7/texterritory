@@ -1,17 +1,25 @@
-<div class="Response index">
-  <h2>List of Responses</h2>
+<h2>List of Responses</h2>
 
-  <%= link_to("Add New Response", {:action => 'new'}) %>
-	<hr />
-  <% @responses.each do |response| %>
-
-    <b>Response ID: </b><%= response.id %><br />
-		<b>Response: </b><%= response.input %><br />
-		<b>Question ID: </b><%= response.question_id %><br />
-		<b>User ID: </b><%= response.user_id %><br /> 
-		<%= link_to("Show", {:action => 'show', :id => response.id}) %> |
-		<%= link_to("Edit", {:action => 'edit', :id => response.id}) %> |
-		<%= link_to("Delete", {:action => 'delete', :id => response.id}) %><br />
-				
-		<br />
+<%= link_to("Add New Response", {:action => 'new'}) %>  
+<table class="table table-hover" summary="Question list">
+  <tr>
+    <th>ID</th>
+    <th>Response</th>
+    <th>Question ID</th>
+    <th>User ID</th>
+		<th>Actions</th>
+  </tr>	
+	
+	<% @responses.each do |response| %>
+   <tr>
+		  <td><%= response.id %></td>
+			<td><%= response.input %></td>
+			<td><%= response.question_id %></td>
+			<td><%= response.user_id %></td>
+			<td>
+				<%= link_to("Edit", {:action => 'edit', :id => response.id}) %>
+				<%= link_to("Delete", {:action => 'delete', :id => response.id}) %>
+			</td>	
+		</tr>
 	<%end%>
+</table>

@@ -1,17 +1,25 @@
-<div class="Answer_choice index">
-  <h2>List of Answer Choices</h2>
-
-  <%= link_to("Add New Response", {:action => 'new'}) %>
-	<hr />
-  <% @answer_choices.each do |choice| %>
-
-    <b>Choice ID: </b><%= choice.id %><br />
-		<b>Text: </b><%= choice.text %><br />
-		<b>Question ID: </b><%= choice.question_id %><br />
-		<b>Image URL: </b><%= choice.image_url %><br />
-		<%= link_to("Show", {:action => 'show', :id => choice.id}) %> |
-		<%= link_to("Edit", {:action => 'edit', :id => choice.id}) %> |
-		<%= link_to("Delete", {:action => 'destroy', :id => choice.id}) %><br />
-				
-		<br />
+<h2>List of Answer Choices</h2>
+<%= link_to("Add New Response", {:action => 'new'}) %>
+<table class="table table-hover">
+	<tr>
+		<th>ID</th>
+		<th>Answer Choice</th>
+		<th>Question ID</th>
+		<th>Image URL</th>
+		<th>Actions</th>
+	</tr>
+		
+	<% @answer_choices.each do |choice| %>
+	<tr>
+    <td><%= choice.id %></td>
+		<td><%= choice.text %></td>
+		<td><%= choice.question_id %></td>
+		<td>...<%= choice.image_url.last(20) %></td>
+		<td>
+			<%= link_to("Edit", {:action => 'edit', :id => choice.id}) %> |
+			<%= link_to("Delete", {:action => 'destroy', :id => choice.id}) %>
+		</td>
+	</tr>
 	<%end%>
+		
+</table>

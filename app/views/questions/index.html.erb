@@ -1,28 +1,24 @@
-<div class="Questions index">
-  <h2>List of Questions</h2>
+<h2>List of Questions</h2>
+<%= link_to("Add New Question", {:action => 'new'}, :class => 'action new') %>
 
-  <%= link_to("Add New Question", {:action => 'new'}, :class => 'action new') %>
-
-  <table class="listing" summary="Question list">
-    <tr>
-      <th>&emsp;&emsp;&emsp;</th>
-      <th>Text</th>
-      <th>Current &emsp;&emsp;&emsp;</th>
-      <th>Type &emsp;&emsp;&emsp;</th>
-			<th>Actions</th>
-    </tr>
-    <% @questions.each do |question| %>
-    <tr>
-      <td><%= question.id %></td>
-      <td><%= question.text %>&emsp;&emsp;&emsp;</td>
-      <td><%= question.current ? 'Yes' : 'No' %>&emsp;&emsp;&emsp;</td>
-			<td><%= question.q_type%></td>
-      <td>
-        <%= link_to("Show", {:action => 'show', :id => question.id})%>
-        <%= link_to("Edit", {:action => 'edit', :id => question.id})%>
-        <%= link_to("Delete", {:action => 'delete', :id => question.id})%>
-      </td>
-    </tr>
-    <% end %>
-  </table>
-</div>
+<table class="table table-hover" summary="Question list">
+  <tr>
+    <th>ID</th>
+    <th>Text</th>
+    <th>Current</th>
+    <th>Type</th>
+		<th>Actions</th>
+  </tr>
+  <% @questions.each do |question| %>
+  <tr>
+    <td><%= question.id %></td>
+    <td><%= question.text %></td>
+    <td><%= question.current ? 'Yes' : 'No' %></td>
+		<td><%= question.q_type%></td>
+    <td>
+      <%= link_to("Edit", {:action => 'edit', :id => question.id})%>
+      <%= link_to("Delete", {:action => 'delete', :id => question.id})%>
+    </td>
+  </tr>
+  <% end %>
+</table>
