@@ -30,7 +30,7 @@ class AnswerChoicesController < ApplicationController
     @answer_choice = AnswerChoice.find(params[:id])
   
     if @answer_choice.update_attributes(answer_choice_params)
-      redirect_to(:action => 'show', :id => @answer_choice.id)
+      redirect_to(:action => 'index')
     else
       render('edit')
     end

@@ -1,7 +1,7 @@
 class VisualsController < ApplicationController
   
   def index
-    @questions = list_current_questions
+    @questions = list_visual_questions
   end
   
   

@@ -30,7 +30,7 @@ class ResponsesController < ApplicationController
     @response = Response.find(params[:id])
     
     if @response.update_attributes(question_params)
-      redirect_to(:action => 'show', :id => @response.id)
+      redirect_to(:action => 'index')
     else
       render('edit')
     end

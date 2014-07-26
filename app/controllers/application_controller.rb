@@ -14,6 +14,14 @@ class ApplicationController < ActionController::Base
   def list_all_questions
     @questions = Question.all
   end
+  
+  def list_visual_questions
+    @questions = Question.where(q_type: '1').where(current: true)
+  end
+  
+  def list_textual_questions
+    @questions = Question.where(q_type: '0').where(current: true)
+  end
     
   
 end
