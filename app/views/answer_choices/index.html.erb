@@ -14,7 +14,7 @@
     <td><%= choice.id %></td>
 		<td><%= choice.text %></td>
 		<td><%= choice.question_id %></td>
-		<td>...<%= choice.image_url.last(20) %></td>
+		<td>...<%= choice.image_url %></td>
 		<td>
 			<%= link_to("Edit", {:action => 'edit', :id => choice.id}) %> |
 			<%= link_to("Delete", {:action => 'destroy', :id => choice.id}) %>
